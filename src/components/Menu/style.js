@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Button from '../Button';
 
 export const LogoImage = styled.img`
     max-width: 168px;
@@ -10,13 +9,14 @@ export const LogoImage = styled.img`
 `;
 
 export const MenuOptions = styled.ul`
-    background-color: yellow;
-    color: #000;
-    list-style-type: none;
+    /* border: 2px solid red;  */
     display: flex;
-    
+    list-style: none;
+    font-size: 22px;
 
-    font-size: 10px;
+    margin: 0 10px;
+    padding: 0px;
+
 
     @media (max-width: 800px) {
         position: fixed;
@@ -24,6 +24,22 @@ export const MenuOptions = styled.ul`
         right: 0;
         bottom: 580px;
     }
+`;
+
+export const MenuOptionsItems = styled.li`
+    color: var(--white);
+    /* border: 2px solid red; */
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    margin: 0 10px;
+    padding: 0px;
+
+    &:hover,
+    &:focus {
+        opacity: .5;
+    } 
 `;
 
 export const MenuWrapper = styled.nav`
@@ -41,37 +57,10 @@ export const MenuWrapper = styled.nav`
     align-items: center;
     
     background-color: var(--black);
-    border-bottom: 10px solid red;
+    border-bottom: 5px solid blue;
 
     @media (max-width: 800px) {
         height: 40px;
         justify-content: center;
-    }
-`;
-
-export const ButtonLink = styled(Button)`  
-    color: var(--white);
-    border: 1px solid var(--white);
-    padding: 20px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: opacity .3s;
-
-    &:hover,
-    &:focus {
-        opacity: .5;
-    }
-
-    @media (max-width: 800px) {
-        background-color: var(--primary);
-        border-radius: 0;
-        bottom: 0;
-        color: var(--white);
-        left: 0;
-        outline: 0;
-        position: fixed;
-        right: 0;
-        text-align: center;
     }
 `;

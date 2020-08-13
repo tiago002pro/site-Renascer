@@ -1,6 +1,9 @@
 import React from 'react';
 import Logo from '../../assets/img/logo.png';
-import { LogoImage, MenuOptions, MenuWrapper, ButtonLink } from './style';
+import { LogoImage, MenuOptions, MenuOptionsItems, MenuWrapper } from './style';
+import Button from '../Button';
+
+// const items = ['Schedule', 'Music', 'Chords', 'Video', 'About'];
 
 function Menu(){
     return (
@@ -10,15 +13,17 @@ function Menu(){
             </a>
 
             <MenuOptions>
-                <li>Home</li>
-                <li>Music</li>
-                <li>Video</li>
-                <li>About</li>
+                {/* <MenuOptionsItems>{items}</MenuOptionsItems> */}
+                <MenuOptionsItems as="a" href="/">Schedule</MenuOptionsItems>
+                <MenuOptionsItems as="a" href="/">Music</MenuOptionsItems>
+                <MenuOptionsItems as="a" href="/">Chords</MenuOptionsItems>
+                <MenuOptionsItems as="a" href="/">Video</MenuOptionsItems>
+                <MenuOptionsItems as="a" href="/">About</MenuOptionsItems>
             </MenuOptions>
 
-            <ButtonLink as="a" className="ButtonLink" href="/">
+            <Button as="a" className="ButtonLink" href="/">
                 Partner
-            </ButtonLink>
+            </Button>
         </MenuWrapper>
     );
 }
