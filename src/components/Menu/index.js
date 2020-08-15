@@ -1,27 +1,49 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
 import { LogoImage, MenuOptions, MenuOptionsItems, MenuWrapper } from './style';
+import './menu.css';
 import Button from '../Button';
 
-// const items = ['Schedule', 'Music', 'Chords', 'Video', 'About'];
+const items = [
+    {
+        name: "Schedule",
+        href: "/"
+    },
+    {
+        name: "Music",
+        href: "/musicas"
+    },
+    {
+        name: "Chords",
+        href: "/"
+    },
+    {
+        name: "Video",
+        href: "/videos"
+    },
+    {
+        name: "About",
+        href: "/"
+    }
+]
 
 function Menu(){
     return (
         <MenuWrapper className="Menu">
-            <a href="/">
+            <Link to="/">
                 <LogoImage src={Logo} alt="Vandinho Soares Logo" />
-            </a>
+            </Link>
 
             <MenuOptions>
-                {/* <MenuOptionsItems>{items}</MenuOptionsItems> */}
-                <MenuOptionsItems as="a" href="/">Schedule</MenuOptionsItems>
-                <MenuOptionsItems as="a" href="/">Music</MenuOptionsItems>
-                <MenuOptionsItems as="a" href="/">Chords</MenuOptionsItems>
-                <MenuOptionsItems as="a" href="/">Video</MenuOptionsItems>
-                <MenuOptionsItems as="a" href="/">About</MenuOptionsItems>
+                {items.map((item, index) => {
+                    return(
+                        <MenuOptionsItems key={item.index} as="a" href={item.href} >{item.name}</MenuOptionsItems>
+                    );
+                })}
             </MenuOptions>
 
-            <Button as="a" className="ButtonLink" href="/">
+            <Button as={Link} className="ButtonLink" to="/">
                 Partner
             </Button>
         </MenuWrapper>

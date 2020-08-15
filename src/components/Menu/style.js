@@ -42,7 +42,7 @@ export const MenuOptionsItems = styled.li`
     } 
 `;
 
-export const MenuWrapper = styled.nav`
+export const MenuWrapper = styled.div`
     width: 100%;
     height: 94px;
     
