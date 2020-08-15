@@ -6,19 +6,19 @@ const icons = [
         name: "Facebook",
         src: "https://img.icons8.com/material-rounded/2x/facebook.png",
         alt: "Facebook",
-        link: "/"
+        link: "https://www.facebook.com/wandersonsoaresoficial"
     },
     {
         name: "Instagram",
         src: "https://img.icons8.com/material-rounded/2x/instagram-new.png",   
         alt: "Instagram",
-        link: "/"      
+        link: "https://www.instagram.com/vandinho_oficial/?hl=pt-br"      
     },
     {
-        name: "Twitter",
-        src: "https://img.icons8.com/material-rounded/2x/twitter.png",
-        alt: "Twitter",
-        link: "/"
+        name: "Spotify",
+        src: "https://img.icons8.com/metro/2x/spotify.png",
+        alt: "Spotify",
+        link: "https://open.spotify.com/artist/4a1qfOJBGQxvJnTMQZc42f"
     },
     {
         name: "Youtube",
@@ -49,7 +49,7 @@ function Footer(){
             <FooterBaseInsideMidlle>
                 {icons.map((icon, index) => {
                     return(
-                        <FooterCircle as="a" href={icon.link} key={index}>
+                        <FooterCircle as="a" href={icon.link} key={index} target="_blank">
                             <FooterImg src={icon.src} alt={icon.alt} />
                         </FooterCircle>
                     );
