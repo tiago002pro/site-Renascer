@@ -12,9 +12,17 @@ export const FooterBaseInsideTop = styled.div`
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 32px;
-    padding-bottom: 32px;
-    text-align: justify;
-    `;
+    padding-bottom: 20px;
+    text-align: center;   
+
+    @media (max-width: 800px){
+        text-align: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        padding-bottom: 20px;
+    }
+`;
 
 export const FooterBaseInsideMidlle = styled.div`
     background-color: #333333;
@@ -32,8 +40,14 @@ export const FooterCircle = styled.div`
     place-items: center;
     justify-items: center;
     margin: 5px;
-`;
+    opacity: .5;
 
+    &:hover,
+    &:focus{
+        opacity: 1;
+    }
+
+`;
 
 export const FooterImg = styled.img`
     width: 30px;
@@ -46,6 +60,10 @@ export const FooterBaseInsideDown = styled.div`
     background-color: #1c1c1c;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    @media (max-width: 800px){
+        padding-bottom: 10px;
+    }
 `;

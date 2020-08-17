@@ -1,12 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import PageDefault from '../../components/PageDefault';
-// import CarouselImage from './components/Carousel/components/ImageCard';
+import SimpleSlider from './components/Carousel-Images';
 
 function Home() {
   return (
       <PageDefault>
-        Menu
+        {/* <SimpleSlider /> */}
       </PageDefault >
   );
 }

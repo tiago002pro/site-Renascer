@@ -7,23 +7,23 @@ import Button from '../Button';
 
 const items = [
     {
-        name: "Schedule",
+        name: "Agenda",
         href: "/"
     },
     {
-        name: "Music",
+        name: "Musicas",
         href: "/musicas"
     },
     {
-        name: "Chords",
+        name: "Cifras",
         href: "/"
     },
     {
-        name: "Video",
+        name: "Videos",
         href: "/videos"
     },
     {
-        name: "About",
+        name: "Sobre",
         href: "/"
     }
 ]
@@ -31,9 +31,9 @@ const items = [
 function Menu(){
     return (
         <MenuWrapper className="Menu">
-            <Link to="/">
+            {/* <Link to="/">
                 <LogoImage src={Logo} alt="Vandinho Soares Logo" />
-            </Link>
+            </Link> */}
 
             <MenuOptions>
                 {items.map((item, index) => {
@@ -43,9 +43,10 @@ function Menu(){
                 })}
             </MenuOptions>
 
-            <Button as={Link} className="ButtonLink" to="/">
+
+            {/* <Button as={Link} className="ButtonLink" to="/">
                 Partner
-            </Button>
+            </Button> */}
         </MenuWrapper>
     );
 }

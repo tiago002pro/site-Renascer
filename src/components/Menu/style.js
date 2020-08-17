@@ -9,29 +9,20 @@ export const LogoImage = styled.img`
 `;
 
 export const MenuOptions = styled.ul`
-    /* border: 2px solid red;  */
     display: flex;
     list-style: none;
-    font-size: 22px;
+    font-size: 30px;
 
     margin: 0 10px;
     padding: 0px;
-
-
-    @media (max-width: 800px) {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 580px;
-    }
 `;
 
 export const MenuOptionsItems = styled.li`
     color: var(--white);
-    /* border: 2px solid red; */
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
     
     margin: 0 10px;
     padding: 0px;
@@ -40,6 +31,10 @@ export const MenuOptionsItems = styled.li`
     &:focus {
         opacity: .5;
     } 
+
+    @media (max-width: 800px) {
+        visibility: hidden;
+    }
 `;
 
 export const MenuWrapper = styled.div`
@@ -53,14 +48,14 @@ export const MenuWrapper = styled.div`
     padding-right: 5%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     
     background-color: var(--black);
     border-bottom: 5px solid blue;
 
     @media (max-width: 800px) {
-        height: 40px;
-        justify-content: center;
+        /* height: 40px;
+        justify-content: center; */
     }
 `;
