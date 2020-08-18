@@ -3,27 +3,23 @@ import styled from 'styled-components';
 const Button = styled.a` 
     color: var(--white);
     border: 1px solid var(--white);
-    padding: 20px 20px;
-    font-size: 16px;
-    border-radius: 4px;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 2px;
     text-decoration: none;
     transition: opacity .3s;
+    color: #292929;
+    background-color: var(--white);
+    display: inline-block;
 
     &:hover,
     &:focus {
-        opacity: .5;
+        text-decoration: underline; 
     }
 
     @media (max-width: 800px) {
-        background-color: var(--primary);
         border-radius: 0;
-        bottom: 0;
-        color: var(--white);
-        left: 0;
-        outline: 0;
-        position: fixed;
-        right: 0;
-        text-align: center;
     }
 `;
 

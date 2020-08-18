@@ -8,7 +8,7 @@ export const LogoImage = styled.img`
     }
 `;
 
-export const MenuOptions = styled.ul`
+export const MenuOptions = styled.nav`
     display: flex;
     list-style: none;
     font-size: 30px;

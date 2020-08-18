@@ -1,14 +1,11 @@
 import React from 'react';
 import PageDefault from '../../components/PageDefault';
-import ImgMusic from './assets/Img/teste.jpg';
-import { Area, MusicImage } from './style';
+import PageMusic from  './components/PageMusic';
 
 function Music(){
     return(
         <PageDefault>
-            <Area>
-                <MusicImage src={ImgMusic} />
-            </Area>
+                <PageMusic/>
         </PageDefault>
     );
 }
